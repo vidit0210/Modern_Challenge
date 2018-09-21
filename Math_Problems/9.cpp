@@ -6,8 +6,8 @@
 
 using namespace std;
 
-long long sum_to_limit(int uperLimit){
-    long long sum =0;
+long long sum_to_limit(unsigned int uperLimit){
+    unsigned long long int  sum =0;
     for(int i=3;i<=uperLimit;i++){
         if((i%3==0) && (i%5==0)) sum+=i;
     }
@@ -15,6 +15,6 @@ long long sum_to_limit(int uperLimit){
 }
 
 int main(){
-    cout<<sum_to_limit(30);
+    cout<<sum_to_limit(60);
     return 0;
 }
